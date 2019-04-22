@@ -1,0 +1,268 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0px 10px;
+    font-family: "Open Sans";  
+    background-color: #f9fafc;
+    height: 100%;
+    overflow: auto;
+   
+}
+
+
+@font-face{
+    font-family: "Open Sans";
+    src: url("./open-sans/OpenSans-Semibold.ttf");
+  
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+button {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font: 15px "Open Sans";
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+/*Beginning of mobile header area*/
+
+.logo {
+    font-size: 15px;
+}
+
+.menu-links{
+    padding: 0;
+}
+.menu-links li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.menu-links  a{
+    color: #69696a;
+    font-size:15px;
+    text-decoration: none;
+}
+
+/*Beginning of mobile main area*/
+.main-container {
+    width: 100%;
+    margin-bottom: 9%;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.text-border{
+    margin-left: 1px;   
+    border-left: 3px solid  #b0b0b9;
+}
+
+.text {
+    color: #69696a;
+    padding-left: 10px;
+    font-size:15px; 
+}
+
+.circle-class {
+    position: none;
+}
+.circle-class > span {
+    display: none;
+}
+
+
+
+/*
+ *
+Tablet styling
+ *
+*/
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 5px 15px;
+     
+    }
+
+    .container {
+        flex-wrap: row wrap;
+        height: 100%;
+        align-items: stretch;
+    }
+
+    button {
+        width: auto;
+        padding: 10px 30px;
+    }
+
+    /*Beginning of tablet header area*/
+
+    .header-container {
+        flex: 1;
+
+        display: flex;
+        align-items: flex-start;
+    }
+
+   
+    .nav-bar{
+        margin-left:auto;
+    }
+    
+    .menu-links li{
+        display: inline;
+    }
+
+    .menu-links  a{
+        margin-right: 20px;
+    }
+
+    /*Beginning of tablet main area */
+
+    .main-container {
+        flex:2;
+
+        display: flex;
+    }
+
+    .text-body {
+        flex: 1;
+    }
+
+    .circle-class {
+        flex: 1;
+        position: relative;
+    }
+
+    .circle-class > span {
+        display: inherit;
+    }
+
+    #pink-circle{
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+
+        position: absolute;
+        top:0%;
+        left:0%;
+        transform: translate(50%, 28%)
+    }
+
+    #orange-circle{
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+
+        position: absolute;
+        top:20%;
+        left:34%;
+        transform: translate(50%, 50%)
+    }
+
+    #purple-circle{
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        height: 110px;
+        width: 110px;
+
+        position: absolute;
+        top:5%;
+        left:50%;
+        transform: translate(50%, 50%)
+    }
+
+    /*Beginning of tablet footer area */
+
+    .footer-container {
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+
+}
+
+/*
+ *
+Desktop styling
+ *
+*/
+@media only screen and (min-width: 1200px) {
+
+    body {
+        margin: 5px 25px;
+     
+    }
+
+     /*Beginning of desktop header area*/
+     .logo {
+         font-size: 20px;
+     }
+
+     .menu-links  li {
+         margin-right: 50px;
+     }
+
+     .menu-links a {
+        font-size:  20px;
+     }
+
+     
+
+     /*Beginning of desktop main area*/
+
+     .text {
+         font-size: 22px;
+     }
+
+     #pink-circle {
+         height: 400px;
+         width: 400px;
+
+         top:0%;
+         left:7%;
+         transform: translate(50%, 20%)
+     }
+
+     #orange-circle {
+        height: 300px;
+        width: 300px;
+
+        top:25%;
+        left:43%;
+        transform: translate(50%, 50%)
+
+    }
+
+    #purple-circle {
+        height: 225px;
+        width: 225px;
+
+        top:0%;
+        left:55%;
+        transform: translate(50%, 50%)
+    }
+}
